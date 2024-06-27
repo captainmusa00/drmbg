@@ -1,0 +1,129 @@
+/* Stunning CSS styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1517423440428-a5a00ad493e8') no-repeat center center/cover;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-info, .contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+.contact-info h2, .contact-form h2 {
+  color: #4CAF50;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  animation: slideInFromBottom 1s ease-out;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.contact-form button {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
